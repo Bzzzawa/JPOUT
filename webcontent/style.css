@@ -84,6 +84,9 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search-button:hover {
@@ -92,4 +95,120 @@ body {
 
 .search-button:active {
     transform: scale(0.98);
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    fill: #e69191;
+}
+
+/* Category buttons styles */
+.category-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.category-button {
+    background-color: white;
+    color: #333;
+    border: 2px solid #f91010;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.category-button:hover {
+    background-color: #f91010;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(249, 16, 16, 0.3);
+}
+
+.category-button:active {
+    transform: translateY(0);
+}
+
+.category-button.active {
+    background-color: #f91010;
+    color: white;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3 {
+    color: #f91010;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f91010;
+}
+
+.footer-section p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: #ccc;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #f91010;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+    color: #999;
 }
